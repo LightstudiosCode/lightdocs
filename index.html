@@ -1,265 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Light Studios Docs</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/monster-logo.webp" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Light Studios</div>
-                <div class="list-group list-group-flush">
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('WelcomePage')">Welcome👋</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('tokenPage')">Token🪙</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('aIlluminatePage')">AIlluminate💡</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('flarePage')">Flare🔥</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('prismPage')">Prism🌈</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('opticsPage')">Optics🔭</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('dayDreamPage')">DayDream💭</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('cutScenePage')">CutScene🎥</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('ConquerPage')">Let's Conquer Earth🌎</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('TriviaPage')">Sweet Trivia🍭</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('DivineLightPage')">Divine Light🧙‍♂️</a>
-                    <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('CrestfallPage')">Crestfall😶‍🌫️</a>
-                </div>
-            </div>
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                    <div class="container-fluid">
-                        <button class="btn btn-primary" id="sidebarToggle">Docs Menu</button>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item active"><a class="nav-link btn btn-info" target="_blank" href="https://lightstudios.io">Light Studios Site</a></li>
-                                <li class="nav-item active"><a class="nav-link btn btn-warning" target="_blank" href="https://ai.lightstudios.io">AIlluminate Site</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <!-- Page content-->
-                <div id="WelcomePage" class="container-fluid page-content">
-                    <h1 class="mt-4">Welcome to Light Studios</h1>
-                    <p class="lead">Where Worlds are Born and Battles Await!</p>
-                    <hr />
-                    <p class="text-justify">At Light Studios, we don’t just make games; we create revolutionary tools that redefine creativity. Our flagship product, the <strong>AIlluminate Suite</strong>, empowers creators with cutting-edge applications for game development, story writing, art generation, and more—all while ensuring privacy and security, with no internet access required.</p>
-                    <p>The AIlluminate Suite includes:</p>
-                    <ul>
-                        <li><strong>Flare:</strong> A versatile chat assistant capable of coding and web querying.</li>
-                        <li><strong>Prism:</strong> Tools for image generation, upscaling, in-painting, out-painting, and 3D object creation.</li>
-                        <li><strong>DayDream:</strong> Autonomous story and game concept generation, complete with character and location concept art. Dive into character dialogues with ease.</li>
-                        <li><strong>Optics:</strong> Social media automation and content creation, supporting Telegram, Discord, Twitter/X, and Bluesky.</li>
-                        <li><strong>CutScene:</strong> Audio, music, video generation, and video upscaling all in one app.</li>
-                    </ul>
-                    <p>These tools power our games, enabling us to craft extraordinary experiences that push the boundaries of imagination. Our lineup reflects this innovation, with four distinct titles born from the capabilities of the AIlluminate Suite:</p>
-                    <ul>
-                        <li><strong>Let's Conquer Earth:</strong> High-stakes strategy where players compete to conquer Earth, one country at a time.</li>
-                        <li><strong>Sweet Trivia:</strong> A vibrant trivia game for solo or multiplayer fun, featuring customizable kits and an API.</li>
-                        <li><strong>Divine Light:</strong> A mythical 2D MMO with gods, heroes, and ancient beasts clashing in epic PvP duels.</li>
-                        <li><strong>Crestfall:</strong> A survival game where players must escape an encroaching fog—solo or with friends.</li>
-                    </ul>
-                    <p>Join us, and let the adventure begin!</p>
-                    <img class="img-fluid mb-4" alt="footer-img" src="./assets/footer.webp">
-                </div>
-<div id="aIlluminatePage" class="container-fluid page-content" style="display: none;">
-    <h1 class="mt-4">Experience the Future of Creativity with AIlluminate</h1>
-    <hr />
-    <p>AIlluminate is the ultimate suite of AI-powered desktop applications designed to revolutionize creativity, productivity, and innovation. From writing captivating stories and generating stunning visuals to managing online entities and crafting immersive multimedia, AIlluminate empowers you with cutting-edge tools to bring your ideas to life.</p>
-    <blockquote class="blockquote">With AIlluminate, the power of AI is yours—secure, personal, and tailored to your unique vision.</blockquote>
-    <p><strong>AIlluminate Ecosystem:</strong></p>
-    <ul>
-        <li><strong>Flare:</strong> A secure, offline virtual chat assistant for coding, web searching, and personal interactions.</li>
-        <li><strong>Prism:</strong> AI-driven art, image, NFT, and 3D asset generation with cinema-grade upscaling and a vast style library.</li>
-        <li><strong>Optics:</strong> Personalize online entities, craft marketing content, and automate social media and community management with seamless cloud bot integration.</li>
-        <li><strong>DayDream:</strong> Craft entire storylines, characters, settings, and video game ideas, complete with concept art and detailed outlines.</li>
-        <li><strong>CutScene:</strong> Generate sound effects, voiceovers, music, and videos with cinema-grade upscaling for breathtaking multimedia creations.</li>
-    </ul>
-    <p>AIlluminate is your all-in-one AI toolkit, built with privacy and creativity in mind. Whether you’re an artist, writer, gamer, or innovator, AIlluminate gives you the tools to turn imagination into reality!</p>
-</div>
-<div id="tokenPage" class="container-fluid page-content" style="display: none;">
-    <h1 class="mt-4">Power Up Your Experience with the Light Studios Token ($LUMI)!</h1>
-    <hr />
-    <p>Introducing $LUMI, the official token from Light Studios, designed to enhance every aspect of your gaming and creative journey. Whether you're diving into immersive titles or exploring the AIlluminate ecosystem, $LUMI is your key to unlocking a world of possibilities.</p>
-    <blockquote class="blockquote">Use $LUMI to pay for AIlluminate subscriptions, cloud credits, and in-game features across all titles powered by the AIlluminate engine.</blockquote>
-    <p><strong>Token Highlights:</strong></p>
-    <ul>
-        <li>Seamlessly integrated into all Light Studios games for exclusive in-game interactions and rewards.</li>
-        <li>Pay for AIlluminate subscriptions and access additional cloud-based services.</li>
-        <li>Designed for utility within both gaming and creative applications.</li>
-    </ul>
-    <p>With $LUMI, you’re not just playing or creating—you’re part of an innovative ecosystem that empowers your imagination. The possibilities are limitless!</p>
-</div>
-
-<div id="flarePage" class="container-fluid page-content" style="display: none;">
-    <h1 class="mt-4">Meet AIlluminate Flare: Your Secure Desktop AI Assistant!</h1>
-    <hr />
-    <p>Say hello to AIlluminate Flare, the ultimate virtual chat assistant designed to empower your creativity and productivity. Available across all platforms, Flare combines code expertise and web search capabilities in a single, powerful desktop application.</p>
-    <blockquote class="blockquote">Unlike cloud-based AI solutions, Flare prioritizes your privacy, ensuring your ideas and data remain secure and uncompromised.</blockquote>
-    <p><strong>Flare Highlights:</strong></p>
-    <ul>
-        <li>Works offline for complete privacy and control.</li>
-        <li>No data collection or training AI on your interactions.</li>
-        <li>Share Intellectual Property freely without concerns about third-party misuse.</li>
-    </ul>
-    <p>With AIlluminate Flare, you can innovate, create, and collaborate without limits—all in a secure, personal environment!</p>
-</div>
-
-<div id="prismPage" class="container-fluid page-content" style="display: none;">
-    <h1 class="mt-4">Unlock Your Creativity with AIlluminate Prism!</h1>
-    <hr />
-    <p>Introducing AIlluminate Prism, the AI-powered tool designed for creators, gamers, and artists. Whether you're crafting stunning visuals, designing game assets, or generating 3D models, Prism is your all-in-one solution for artistic innovation.</p>
-    <blockquote class="blockquote">From NFT generation to cinema-grade image upscaling, Prism brings professional-grade tools right to your fingertips.</blockquote>
-    <p><strong>Prism Features:</strong></p>
-    <ul>
-        <li>Create art, images, NFTs, and game assets with AI-driven precision.</li>
-        <li>Generate 3D models ready for printing or seamless integration into video games.</li>
-        <li>Access cinema-grade image upscaling for breathtaking results.</li>
-        <li>Explore a vast library of styles and quality levels to suit any project.</li>
-    </ul>
-    <p>With AIlluminate Prism, the only limit is your imagination—start creating today!</p>
-</div>
-
-<div id="opticsPage" class="container-fluid page-content" style="display: none;">
-    <h1 class="mt-4">Enhance Your Online Presence with AIlluminate Optics!</h1>
-    <hr />
-    <p>Introducing AIlluminate Optics, the ultimate tool for crafting personalized online entities and creating impactful marketing content with bespoke personality. Designed to take the hassle out of managing your digital presence, Optics empowers users with cutting-edge automation and customization features.</p>
-    <blockquote class="blockquote">From personalized branding to fully automated community management, Optics ensures your online presence is always on-point—even when you're away.</blockquote>
-    <p><strong>Optics Features:</strong></p>
-    <ul>
-        <li>Quickly create and personalize online entities to match your unique vision.</li>
-        <li>Craft marketing content with a distinct personality that resonates with your audience.</li>
-        <li>Automate social media and community management with bots that handle Telegram, Discord, Twitter/X, and Bluesky.</li>
-        <li>Beam your bots to the cloud for uninterrupted performance, even during connectivity issues.</li>
-    </ul>
-    <p>With AIlluminate Optics, you can stay connected, build your brand, and engage your audience effortlessly—anytime, anywhere!</p>
-</div>
-<div id="dayDreamPage" class="container-fluid page-content" style="display: none;">
-    <h1 class="mt-4">Bring Your Stories to Life with AIlluminate DayDream!</h1>
-    <hr />
-    <p>Step into the world of limitless creativity with AIlluminate DayDream, the storywriting AI system designed for writers, game developers, and dreamers alike. DayDream transforms your prompts into fully realized storylines, complete with detailed characters, immersive settings, and even gameplay ideas for video games inspired by your narrative.</p>
-    <blockquote class="blockquote">From world-building to concept art, DayDream is your all-in-one companion for crafting unforgettable stories and gameplay ideas.</blockquote>
-    <p><strong>DayDream Features:</strong></p>
-    <ul>
-        <li>Generate entire storylines with rich characters, detailed bios, and immersive settings.</li>
-        <li>Design story assets, including world maps, locations, and concept art for characters and environments.</li>
-        <li>Receive outlines, synopses, scene breakdowns, and summaries tailored to your vision.</li>
-        <li>Unlock video game gameplay ideas based on your story, from mechanics to level designs.</li>
-    </ul>
-    <p>With AIlluminate DayDream, your imagination is the only limit—start crafting your masterpiece today!</p>
-</div>
-
-<div id="cutScenePage" class="container-fluid page-content" style="display: none;">
-    <h1 class="mt-4">Create Cinematic Magic with AIlluminate CutScene!</h1>
-    <hr />
-    <p>Introducing AIlluminate CutScene, the desktop application that puts the power of AI-driven multimedia creation in your hands. Whether you're crafting soundscapes, voiceovers, music, or videos, CutScene provides the tools you need to bring your projects to life with professional-grade quality.</p>
-    <blockquote class="blockquote">From generating immersive sound effects to cinema-grade video upscaling, CutScene transforms your creative vision into reality.</blockquote>
-    <p><strong>CutScene Features:</strong></p>
-    <ul>
-        <li>Generate sound effects, voiceovers, and music with AI precision.</li>
-        <li>Create stunning videos tailored to your project needs.</li>
-        <li>Upscale videos to cinema-grade quality for breathtaking results.</li>
-        <li>Streamline your multimedia creation process with intuitive, user-friendly tools.</li>
-    </ul>
-    <p>With AIlluminate CutScene, you can produce professional-grade multimedia assets that captivate and inspire—right from your desktop!</p>
-</div>
-
-
-
-
-                <div id="ConquerPage" class="container-fluid page-content" style="display: none;">
-                    <h1 class="mt-4">Let’s Conquer Earth</h1>
-                    <p class="lead">Dominate the World, One Country at a Time!</p>
-                    <hr />
-                    <p>Get ready to stake your claim and wield influence over the globe in <strong>Let’s Conquer Earth</strong>, a thrilling play-to-earn strategy game on Binance Smart Chain.</p>
-                    <p><strong>Game Features:</strong></p>
-                    <ul>
-                        <li><strong>Conquer & Trade:</strong> Buy and steal countries using BNB, influence markets, and set messages.</li>
-                        <li><strong>Battle for Control:</strong> Use xlit tokens to attack or defend countries, altering their value.</li>
-                        <li><strong>Collect & Mint:</strong> Earn collectible items and mint the ultimate <strong>Grand Champion NFT</strong>.</li>
-                        <li><strong>Leaderboard & Warmonger:</strong> View top players or bribe the Warmonger to help complete your collection.</li>
-                    </ul>
-                    <p>The world awaits—claim, conquer, and command your destiny in Let’s Conquer Earth!</p>
-                </div>
-
-                <div id="TriviaPage" class="container-fluid page-content" style="display: none;">
-                    <h1 class="mt-4">Sweet Trivia</h1>
-                    <p class="lead">The Ultimate Trivia Challenge Awaits!</p>
-                    <hr />
-                    <p>Dive into the delightful world of <strong>Sweet Trivia</strong>, featuring over 200,000 questions and multiple game modes for endless enjoyment.</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Game Modes</h3>
-                            <ul>
-                                <li><strong>Practice Mode:</strong> Learn at your own pace.</li>
-                                <li><strong>Solo Mode:</strong> Chase the high score as questions get harder.</li>
-                                <li><strong>Multiplayer Mode:</strong> Challenge friends or match with others.</li>
-                                <li><strong>Story Mode:</strong> Move along a game board for prizes and trophies.</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Power-Ups & Features</h3>
-                            <ul>
-                                <li><strong>Second Chance:</strong> Earn or purchase power-ups.</li>
-                                <li><strong>Choice Bomb:</strong> Increase your chances in tough situations.</li>
-                                <li><strong>Whitelabel Kit:</strong> Customize your own trivia experience with our complete kit.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p>Whether you're a casual player or a trivia mastermind, <strong>Sweet Trivia</strong> has something for everyone!</p>
-                </div>
-
-                <div id="DivineLightPage" class="container-fluid page-content" style="display: none;">
-                    <h1 class="mt-4">Divine Light</h1>
-                    <p class="lead">Enter the Realm of Adventure – A 2D Top-Down MMORPG Like No Other!</p>
-                    <hr />
-                    <p>Step into a world of endless possibilities with our immersive 2D top-down MMORPG, where the power of choice and strategy lies in your hands.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li><strong>Character Creation:</strong> Choose from various races and species.</li>
-                        <li><strong>Exploration:</strong> Traverse mountains, forests, and hidden dungeons, solo or with friends.</li>
-                        <li><strong>Card-Based Combat:</strong> Use skill and strategy to win epic duels.</li>
-                        <li><strong>Web3 Integration:</strong> Connect with blockchain assets and trade seamlessly.</li>
-                    </ul>
-                    <p>Dive in, explore, and let the quest begin!</p>
-                </div>
-
-                <div id="CrestfallPage" class="container-fluid page-content" style="display: none;">
-                    <h1 class="mt-4">Crestfall</h1>
-                    <p class="lead">Survive the Unforgiving World of Crestfall</p>
-                    <hr />
-                    <p>Enter <strong>Crestfall</strong>, a survival experience crafted in the powerful Unity engine. Players are thrust into a haunting world where every decision could mean life or death.</p>
-                    <p><strong>Game Highlights:</strong></p>
-                    <ul>
-                        <li><strong>Resource Gathering:</strong> Gather essential supplies to survive.</li>
-                        <li><strong>Crafting & Combat:</strong> Craft items, build fortifications, and fend off threats.</li>
-                        <li><strong>Explore & Escape:</strong> Roam the fog-laden landscape, uncover secrets, and escape the relentless fog.</li>
-                    </ul>
-                    <p>Be among the first to experience <strong>Crestfall</strong> in its closed alpha, exclusively for our presale and ICO participants. Will you escape, or will you fall to the fog?</p>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Light Studios Docs</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/monster-logo.webp" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar-->
+      <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">Light Studios</div>
+        <div class="list-group list-group-flush">
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('WelcomePage')">Welcome👋</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('tokenPage')">Token🪙</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('aIlluminatePage')">AIlluminate💡</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('flarePage')">Flare🔥</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('prismPage')">Prism🌈</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('opticsPage')">Optics🔭</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('dayDreamPage')">DayDream💭</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('cutScenePage')">CutScene🎥</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('upscalerMiniPage')">Upscaler Mini🆙</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('web3ToolboxPage')">Web3 Toolbox⛓️</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('ConquerPage')">Let's Conquer Earth🌎</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('TriviaPage')">Sweet Trivia🍭</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('DivineLightPage')">Divine Light🧙‍♂️</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('CrestfallPage')">Crestfall😶‍🌫️</a>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script>
-            function showPage(pageId) {
-                const pages = document.querySelectorAll('.page-content');
-                pages.forEach(page => {
-                    page.style.display = 'none';
-                });
-                document.getElementById(pageId).style.display = 'block';
-                document.body.classList.remove('sb-sidenav-toggled');
-            }
-        </script>
-    </body>
+      </div>
+      <!-- Page content wrapper-->
+      <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+          <div class="container-fluid">
+            <button class="btn btn-primary" id="sidebarToggle">Docs Menu</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link btn btn-info" target="_blank" href="https://lightstudios.io">Light Studios Site</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link btn btn-warning" target="_blank" href="https://ai.lightstudios.io">AIlluminate Site</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Page content-->
+        <div id="WelcomePage" class="container-fluid page-content">
+          <h1 class="mt-4">Welcome to Light Studios</h1>
+          <p class="lead">Where Worlds are Born and Battles Await!</p>
+          <hr />
+          <p class="text-justify">At Light Studios, we don’t just make games; we create revolutionary tools that redefine creativity. Our flagship product, the <strong>AIlluminate Suite</strong>, empowers creators with cutting-edge applications for game development, story writing, art generation, and more—all while ensuring privacy and security, with no internet access required. </p>
+          <p>The AIlluminate Suite includes:</p>
+          <ul>
+            <li>
+              <strong>Flare:</strong> A versatile chat assistant capable of coding and web querying.
+            </li>
+            <li>
+              <strong>Prism:</strong> Tools for image generation, upscaling, in-painting, out-painting, and 3D object creation.
+            </li>
+            <li>
+              <strong>DayDream:</strong> Autonomous story and game concept generation, complete with character and location concept art. Dive into character dialogues with ease.
+            </li>
+            <li>
+              <strong>Optics:</strong> Social media automation and content creation, supporting Telegram, Discord, Twitter/X, and Bluesky.
+            </li>
+            <li>
+              <strong>CutScene:</strong> Audio, music, video generation, and video upscaling all in one app.
+            </li>
+          </ul>
+          <p>These tools power our games, enabling us to craft extraordinary experiences that push the boundaries of imagination. Our lineup reflects this innovation, with four distinct titles born from the capabilities of the AIlluminate Suite:</p>
+          <ul>
+            <li>
+              <strong>Let's Conquer Earth:</strong> High-stakes strategy where players compete to conquer Earth, one country at a time.
+            </li>
+            <li>
+              <strong>Sweet Trivia:</strong> A vibrant trivia game for solo or multiplayer fun, featuring customizable kits and an API.
+            </li>
+            <li>
+              <strong>Divine Light:</strong> A mythical 2D MMO with gods, heroes, and ancient beasts clashing in epic PvP duels.
+            </li>
+            <li>
+              <strong>Crestfall:</strong> A survival game where players must escape an encroaching fog—solo or with friends.
+            </li>
+          </ul>
+          <p>Join us, and let the adventure begin!</p>
+          <img class="img-fluid mb-4" alt="footer-img" src="./assets/footer.webp">
+        </div>
+        <div id="tokenPage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">
+            <a href="https://invest.ailluminate.net" target="_blank" rel="noopener noreferrer"> Power Up Your Experience with the Light Studios Token ($LUMI)! </a>
+          </h1>
+          <hr />
+          <p> Introducing $LUMI, the official token from Light Studios, designed to enhance every aspect of your gaming and creative journey. Whether you're diving into immersive titles or exploring the AIlluminate ecosystem, $LUMI is your key to unlocking a world of possibilities. </p>
+          <p> For full details and tokenomics, visit <a href="https://invest.ailluminate.net" target="_blank" rel="noopener noreferrer"> invest.ailluminate.net </a>. </p>
+          <blockquote class="blockquote"> Use $LUMI to pay for AIlluminate subscriptions, cloud credits, and in-game features across all titles powered by the AIlluminate engine. </blockquote>
+          <p>
+            <strong>Token Highlights:</strong>
+          </p>
+          <ul>
+            <li>Seamlessly integrated into all Light Studios games for exclusive in-game interactions and rewards.</li>
+            <li>Pay for AIlluminate subscriptions and access additional cloud-based services.</li>
+            <li>Designed for utility within both gaming and creative applications.</li>
+          </ul>
+          <p> With $LUMI, you’re not just playing or creating—you’re part of an innovative ecosystem that empowers your imagination. The possibilities are limitless! </p>
+        </div>
+        <div id="aIlluminatePage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Experience the Future of Creativity with AIlluminate</h1>
+          <hr />
+          <p> AIlluminate is the ultimate suite of AI-powered applications—desktop and web—designed to revolutionize creativity, productivity, and innovation. From writing captivating stories and generating stunning visuals to managing online entities and crafting immersive multimedia, AIlluminate empowers you with cutting-edge tools to bring your ideas to life. </p>
+          <blockquote class="blockquote"> With AIlluminate, the power of AI is yours—secure, personal, and tailored to your unique vision. </blockquote>
+          <p>
+            <strong>Subscription & Deployment:</strong>
+          </p>
+          <ul>
+            <li>Currently Web3-only subscription, deployed on the Avalanche C-Chain and Sonic Labs chain.</li>
+            <li>Subscribe at <a href="https://dashboard.ailluminate.net" target="_blank" rel="noopener noreferrer">dashboard.ailluminate.net</a> or visit the main website at <a href="https://ailluminate.net" target="_blank" rel="noopener noreferrer">ailluminate.net</a>. </li>
+          </ul>
+          <p>
+            <strong>Available Now:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Flare Desktop</strong>, <strong>Optics Desktop</strong>, and <strong>Prism Desktop</strong> alphas are available via subscription.
+            </li>
+            <li>Web apps for <em>crypto market prediction</em>, <em>smart contract management</em>, and <em>AI image upscaling</em> are live now. </li>
+          </ul>
+          <p>
+            <strong>AIlluminate Ecosystem:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Flare:</strong> A secure, offline virtual chat assistant for coding, web searching, and personal interactions.
+            </li>
+            <li>
+              <strong>Prism:</strong> AI-driven art, image, NFT, and 3D asset generation with cinema-grade upscaling and a vast style library.
+            </li>
+            <li>
+              <strong>Optics:</strong> Personalize online entities, craft marketing content, and automate social media and community management with seamless cloud bot integration.
+            </li>
+            <li>
+              <strong>DayDream:</strong> Craft entire storylines, characters, settings, and video game ideas— <em>still unreleased</em>.
+            </li>
+            <li>
+              <strong>CutScene:</strong> Generate sound effects, voiceovers, music, and videos with cinema-grade upscaling— <em>still unreleased</em>.
+            </li>
+          </ul>
+          <p> AIlluminate is your all-in-one AI toolkit, built with privacy and creativity in mind. Whether you’re an artist, writer, gamer, or innovator, AIlluminate gives you the tools to turn imagination into reality—on desktop or in the browser! </p>
+          <img src="./assets/ailluminate.jpg" alt="AIlluminate" class="img-fluid">
+        </div>
+        <div id="flarePage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Meet AIlluminate Flare: Your Secure Desktop AI Assistant!</h1>
+          <hr />
+          <p> Say hello to AIlluminate Flare, the ultimate virtual chat assistant designed to empower your creativity and productivity. Available across all platforms, Flare combines code expertise and web search capabilities in a single, powerful desktop application. </p>
+          <blockquote class="blockquote"> Unlike cloud-based AI solutions, Flare prioritizes your privacy, ensuring your ideas and data remain secure and uncompromised. </blockquote>
+          <p>
+            <strong>Alpha Access & Platforms:</strong>
+          </p>
+          <ul>
+            <li>Alpha available via subscription.</li>
+            <li>Supported on Mac (Arm64), Linux (x64), and Windows (x64).</li>
+          </ul>
+          <p> Flare does not require a GPU but can leverage CUDA acceleration on Linux or Windows if configured. On Mac, Metal API is used by default for hardware acceleration. </p>
+          <p>
+            <strong>Installation & Setup:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Windows:</strong> Download and run the <code>.exe</code> installer.
+            </li>
+            <li>
+              <strong>Linux:</strong> Download the AppImage, make it executable ( <code>chmod +x AIlluminate-Flare.AppImage</code>), then launch it from the terminal with: <br />
+              <code>./AIlluminate-Flare.AppImage --no-sandbox</code>
+            </li>
+            <li>
+              <strong>Mac (Arm64):</strong> Download the <code>.dmg</code> or <code>.app</code> bundle. On first launch, open <em>System Preferences → Security & Privacy → General</em> and click “Open Anyway” to approve the unsigned app, then double-click to run.
+            </li>
+          </ul>
+          <p> When Flare launches, enter your access code from <a href="https://dashboard.ailluminate.net" target="_blank" rel="noopener noreferrer"> dashboard.ailluminate.net </a>. You will then be prompted to select a folder for storing downloaded AI models. Choose your desired model, and Flare will download it into that folder. </p>
+          <p> Once setup is complete, you can begin conversations with the AI. If web access is enabled, each query is treated as a standalone request. </p>
+          <p>
+            <strong>Flare Highlights:</strong>
+          </p>
+          <ul>
+            <li>Works offline for complete privacy and control.</li>
+            <li>No data collection or training AI on your interactions.</li>
+            <li>Share Intellectual Property freely without concerns about third-party misuse.</li>
+          </ul>
+          <p> With AIlluminate Flare, you can innovate, create, and collaborate without limits—all in a secure, personal environment! </p>
+        </div>
+        <div id="prismPage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Unlock Your Creativity with AIlluminate Prism!</h1>
+          <hr />
+          <p> Introducing AIlluminate Prism, the AI-powered tool designed for creators, gamers, and artists. Whether you're crafting stunning visuals, designing game assets, or generating 3D models, Prism is your all-in-one solution for artistic innovation. </p>
+          <blockquote class="blockquote"> From NFT generation to cinema-grade image upscaling, Prism brings professional-grade tools right to your fingertips. </blockquote>
+          <p>
+            <strong>Alpha Access & Platforms:</strong>
+          </p>
+          <ul>
+            <li>Alpha available via subscription.</li>
+            <li>Supported on Mac (Arm64), Linux (x64), and Windows (x64).</li>
+          </ul>
+          <p>Prism does not require a GPU and currently has no GPU acceleration.</p>
+          <p>
+            <strong>Installation & Setup:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Windows:</strong> Download and run the <code>.exe</code> installer.
+            </li>
+            <li>
+              <strong>Linux:</strong> Download the AppImage, make it executable: <br />
+              <code>chmod +x AIlluminate-Prism.AppImage</code>, then launch with: <br />
+              <code>./AIlluminate-Prism.AppImage --no-sandbox</code>
+            </li>
+            <li>
+              <strong>Mac (Arm64):</strong> Download the <code>.dmg</code> or <code>.app</code> bundle. On first launch, open <em>System Preferences → Security & Privacy → General</em> and click “Open Anyway” to approve the unsigned app, then double-click to run.
+            </li>
+          </ul>
+          <p> When Prism launches, enter your access code from <a href="https://dashboard.ailluminate.net" target="_blank" rel="noopener noreferrer"> dashboard.ailluminate.net </a>. You will then be prompted to select a folder for storing your downloaded AI models. </p>
+          <p>
+            <strong>Selecting a Model:</strong>
+          </p>
+          <ol>
+            <li> Upon first launch, click the folder icon, navigate to a location on your computer, and select it as your models folder. </li>
+            <li> Choose either <em>R1 Mini</em> or <em>R2 Mini</em> from the model list to download and load that model. </li>
+          </ol>
+          <p>
+            <strong>Generating a Single Image:</strong>
+          </p>
+          <p> In the <strong>Single</strong> tab, type your prompt into the input field and click <strong>Generate</strong>. A loading indicator and progress bar will appear; once complete, your image will be displayed below. </p>
+          <p>
+            <strong>Batch Generation:</strong>
+          </p>
+          <p> Switch to the <strong>Batch</strong> tab to generate multiple images at once. Enter one prompt per line, then click <strong>Batch Generate</strong>. Prompts are processed sequentially and thumbnails populate the gallery—click any thumbnail to view it full size. </p>
+          <p>
+            <strong>Using the System Resources Monitor:</strong>
+          </p>
+          <p> On the left sidebar, CPU and RAM usage are updated every 1.5 seconds so you can monitor how much load inference is placing on your system. </p>
+          <p>
+            <strong>Play Sweet Trivia While You Wait:</strong>
+          </p>
+          <p> If a model is loading or generation is in progress, click the <em>Play While You Wait?</em> button below the loader to open a the Sweet Trivia mini-game in a separate window. </p>
+          <p>
+            <strong>Changing Models:</strong>
+          </p>
+          <p> To load a different model at any time, click the <strong>Model</strong> button on the sidebar. This reopens the folder-selection dialog so you can pick a new folder and model. </p>
+          <p>
+            <strong>Notifications:</strong>
+          </p>
+          <p> Brief messages appear at the top of the screen to inform you of errors, download progress, or completed actions. Keep an eye on these for feedback. </p>
+          <p>
+            <strong>Closing the App:</strong>
+          </p>
+          <p> Use the Minimize, Maximize, and Close controls in the title bar. Closing the window will terminate any running model and associated processes. </p>
+          <p> With AIlluminate Prism, the only limit is your imagination—start creating today! </p>
+        </div>
+        <div id="opticsPage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Enhance Your Online Presence with AIlluminate Optics!</h1>
+          <hr />
+          <p> Introducing AIlluminate Optics, the ultimate tool for crafting personalized online entities and creating impactful marketing content with bespoke personality. Designed to take the hassle out of managing your digital presence, Optics empowers users with cutting-edge automation and customization features. </p>
+          <blockquote class="blockquote"> From personalized branding to fully automated community management, Optics ensures your online presence is always on-point—even when you're away. </blockquote>
+          <p>
+            <strong>Alpha Access & Platforms:</strong>
+          </p>
+          <ul>
+            <li>Alpha available via subscription.</li>
+            <li>Supported on Mac (Arm64), Linux (x64), and Windows (x64).</li>
+          </ul>
+          <p> Optics does not require a GPU but can leverage CUDA acceleration on Linux or Windows if configured. On Mac, Metal API is used by default for hardware acceleration. </p>
+          <p>
+            <strong>Installation & Setup:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Windows:</strong> Download and run the <code>.exe</code> installer.
+            </li>
+            <li>
+              <strong>Linux:</strong> Download the AppImage, make it executable: <br />
+              <code>chmod +x AIlluminate-Optics.AppImage</code>, then launch from the terminal with: <br />
+              <code>./AIlluminate-Optics.AppImage --no-sandbox</code>
+            </li>
+            <li>
+              <strong>Mac (Arm64):</strong> Download the <code>.dmg</code> or <code>.app</code> bundle. On first launch, open <em>System Preferences → Security & Privacy → General</em> and click “Open Anyway” to approve the unsigned app, then double-click to run.
+            </li>
+          </ul>
+          <p> When Optics launches, enter your access code from <a href="https://dashboard.ailluminate.net" target="_blank" rel="noopener noreferrer"> dashboard.ailluminate.net </a>. You will then be prompted to select a folder to store your downloaded AI models. After selecting the folder, choose which model to load and Optics will download it into that folder. </p>
+          <p>
+            <strong>Social Content Creator:</strong>
+          </p>
+          <p> This Social Content Creator helps you generate posts and responses for X (Twitter), Discord, and Telegram, and offers a Character Management section to customize tone and style. </p>
+          <ul>
+            <li>
+              <strong>xCraft:</strong> Generate short and long posts, plus comment responses for X (Twitter).
+            </li>
+            <li>
+              <strong>disCraft:</strong> Create posts and comment responses tailored for Discord.
+            </li>
+            <li>
+              <strong>tgCraft:</strong> Design posts and replies optimized for Telegram.
+            </li>
+            <li>
+              <strong>Characters:</strong> Manage custom characters that affect content personality.
+            </li>
+          </ul>
+          <p>Each platform section includes:</p>
+          <ul>
+            <li>Text areas for your custom input.</li>
+            <li>Buttons to generate the final post or response.</li>
+            <li>Generated content displayed in the Response Box for immediate review.</li>
+          </ul>
+          <p>In the Character Management section you can:</p>
+          <ul>
+            <li>Create new characters by name and personality description.</li>
+            <li>Select existing characters to apply their style and tone.</li>
+          </ul>
+          <p>
+            <strong>Telegram Agent Manager:</strong>
+          </p>
+          <p> Run AI-powered Telegram bots with custom personalities and knowledge bases. Create new agents, assign character traits, and manage active bots. </p>
+          <ul>
+            <li>
+              <strong>New Agent:</strong> Opens the form to create a Telegram bot agent.
+            </li>
+            <li>
+              <strong>Agent List:</strong> Displays all managed agents.
+            </li>
+          </ul>
+          <p>
+            <strong>Setting Up Your Bot in a Group or Supergroup</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Adding the Bot:</strong> Invite your bot by username or invite link.
+            </li>
+            <li>
+              <strong>Permissions:</strong>
+              <ul>
+                <li>View Messages</li>
+                <li>View Message History</li>
+                <li>Reply and Mention</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Admin Control:</strong> Grant admin privileges for full functionality.
+            </li>
+          </ul>
+          <p>
+            <strong>Form Fields Explanation:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Telegram Bot Token:</strong> Token from BotFather.
+            </li>
+            <li>
+              <strong>Agent Name:</strong> Conversational name for the agent.
+            </li>
+            <li>
+              <strong>Select Character (Optional):</strong> Dropdown to apply a character’s personality.
+            </li>
+            <li>
+              <strong>Create New Character:</strong> Opens pop-up to define custom traits.
+            </li>
+            <li>
+              <strong>Personality Description:</strong> Guides the bot’s tone and style.
+            </li>
+            <li>
+              <strong>Group Chat ID:</strong> Unique identifier of the Telegram group.
+            </li>
+          </ul>
+          <p>
+            <strong>Obtaining Group Chat ID:</strong>
+          </p>
+          <p>
+            <strong>Method 1:</strong> Use @jsondumpbot—forward a group message to it and copy the “forward_from_chat.id”. <br />
+            <strong>Method 2:</strong> In Telegram Web, inspect the channel URL, remove suffix and prefix, then add “-100” to get the ID.
+          </p>
+          <p>
+            <strong>Idle Chat Topics:</strong> List topics for idle conversation.
+          </p>
+          <p>
+            <strong>Knowledge Base:</strong> Provide FAQ entries, one per line.
+          </p>
+          <p> After filling all fields, click <strong>Create Agent</strong>. Make sure the bot is added to the group with proper permissions. The “Managed Agents List” section shows all active agents for review, updates, or removal. </p>
+          <p>
+            <strong>Discord Agent Manager:</strong>
+          </p>
+          <p> Manage AI-powered Discord bots with custom personalities and knowledge bases. Set up on the Discord Developer Portal and streamline agent creation. </p>
+          <ul>
+            <li>
+              <strong>New Agent:</strong> Opens the form to create a Discord bot agent.
+            </li>
+            <li>
+              <strong>Bot Agent List:</strong> Shows all managed Discord agents.
+            </li>
+          </ul>
+          <p>
+            <strong>Setting Up Your Discord Bot</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Developer Portal:</strong> Create an application, add a bot, and copy its token.
+            </li>
+            <li>
+              <strong>Invite to Guild:</strong> Generate an OAuth2 URL with View Channels, Send Messages, applications.commands, and bot scopes.
+            </li>
+          </ul>
+          <p>
+            <strong>Form Fields Explanation:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Discord Bot Token:</strong> Keep this token secure.
+            </li>
+            <li>
+              <strong>Agent Name:</strong> Bot’s display name (e.g., “clintBeastwood”).
+            </li>
+            <li>
+              <strong>Select Character:</strong> Apply a pre-configured character or create a new one.
+            </li>
+            <li>
+              <strong>Create New Character:</strong> Pop-up to define custom bot traits.
+            </li>
+            <li>
+              <strong>Personality Description:</strong> Guides the bot’s tone and style.
+            </li>
+            <li>
+              <strong>Guild ID:</strong> Your server’s unique identifier.
+            </li>
+            <li>
+              <strong>Idle Chat Topics:</strong> List of topics for casual conversation.
+            </li>
+            <li>
+              <strong>Knowledge Base:</strong> FAQ entries for contextual responses.
+            </li>
+          </ul>
+          <p> Click <strong>Create Agent</strong> to set up your Discord bot. Ensure it has necessary permissions in your guild and keep its token confidential. The “Managed Agents List” displays all created Discord agents for management. </p>
+          <p>
+            <strong>Model Options:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>G2 Social Model:</strong> Optimized for speed with faster responses but slightly less accuracy—ideal for real-time interactions.
+            </li>
+            <li>
+              <strong>G7 Social Model:</strong> Prioritizes accuracy over speed for more contextually rich responses when quality matters most.
+            </li>
+          </ul>
+        </div>
+        <div id="dayDreamPage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Bring Your Stories to Life with AIlluminate DayDream!</h1>
+          <hr />
+          <p>Step into the world of limitless creativity with AIlluminate DayDream, the storywriting AI system designed for writers, game developers, and dreamers alike. DayDream transforms your prompts into fully realized storylines, complete with detailed characters, immersive settings, and even gameplay ideas for video games inspired by your narrative.</p>
+          <blockquote class="blockquote">From world-building to concept art, DayDream is your all-in-one companion for crafting unforgettable stories and gameplay ideas.</blockquote>
+          <p>
+            <strong>DayDream Features:</strong>
+          </p>
+          <ul>
+            <li>Generate entire storylines with rich characters, detailed bios, and immersive settings.</li>
+            <li>Design story assets, including world maps, locations, and concept art for characters and environments.</li>
+            <li>Receive outlines, synopses, scene breakdowns, and summaries tailored to your vision.</li>
+            <li>Unlock video game gameplay ideas based on your story, from mechanics to level designs.</li>
+          </ul>
+          <p>With AIlluminate DayDream, your imagination is the only limit—start crafting your masterpiece today!</p>
+        </div>
+        <div id="cutScenePage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Create Cinematic Magic with AIlluminate CutScene!</h1>
+          <hr />
+          <p>Introducing AIlluminate CutScene, the desktop application that puts the power of AI-driven multimedia creation in your hands. Whether you're crafting soundscapes, voiceovers, music, or videos, CutScene provides the tools you need to bring your projects to life with professional-grade quality.</p>
+          <blockquote class="blockquote">From generating immersive sound effects to cinema-grade video upscaling, CutScene transforms your creative vision into reality.</blockquote>
+          <p>
+            <strong>CutScene Features:</strong>
+          </p>
+          <ul>
+            <li>Generate sound effects, voiceovers, and music with AI precision.</li>
+            <li>Create stunning videos tailored to your project needs.</li>
+            <li>Upscale videos to cinema-grade quality for breathtaking results.</li>
+            <li>Streamline your multimedia creation process with intuitive, user-friendly tools.</li>
+          </ul>
+          <p>With AIlluminate CutScene, you can produce professional-grade multimedia assets that captivate and inspire—right from your desktop!</p>
+        </div>
+
+<div id="upscalerMiniPage" class="container-fluid page-content" style="display: none;">
+  <h1 class="mt-4">AIlluminate Upscaler Mini</h1>
+  <hr />
+  <p>
+    Upscaler Mini is a web-tool available to all AIlluminate subscribers.
+    Sign in at <a href="https://dashboard.ailluminate.net" target="_blank" rel="noopener noreferrer">
+    dashboard.ailluminate.net</a> to access lossless 2× upscaling for small images.
+  </p>
+  <p>
+    The live preview uses a nearest-neighbor algorithm, so while it’s not as refined as clicking the full “Upscale” button, you can still use it as an “upscaled” option for quick results.
+  </p>
+</div>
+
+<div id="web3ToolboxPage" class="container-fluid page-content" style="display: none;">
+  <h1 class="mt-4">Explore the Web3 Toolbox</h1>
+  <hr />
+  <p>
+    The Web3 Toolbox is a collection of powerful web-apps available to all AIlluminate subscribers.
+    Sign in at <a href="https://dashboard.ailluminate.net" target="_blank" rel="noopener noreferrer">
+    dashboard.ailluminate.net</a> to access these tools.
+  </p>
+  <p><strong>Included Apps:</strong></p>
+  <ul>
+    <li>
+      <strong>Bitcoin Market Prediction Tools:</strong>
+      Three models—<em>Alpha</em>, <em>Beta</em>, and <em>Gamma</em>—each provide a prediction for the next day’s closing price at 00:00 Zulu time.
+    </li>
+    <li>
+      <strong>Smart Contract Management Panel:</strong>
+      A full Solidity contract control panel that works with any EVM network via MetaMask, letting you interact with, call, and send transactions to your contracts directly in the browser.
+    </li>
+  </ul>
+</div>
+
+
+        <div id="ConquerPage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Let’s Conquer Earth</h1>
+          <p class="lead">Dominate the World, One Country at a Time!</p>
+          <hr />
+          <p>Get ready to stake your claim and wield influence over the globe in <strong>Let’s Conquer Earth</strong>, a thrilling play-to-earn strategy game on Binance Smart Chain. </p>
+          <p>
+            <strong>Game Features:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Conquer & Trade:</strong> Buy and steal countries using BNB, influence markets, and set messages.
+            </li>
+            <li>
+              <strong>Battle for Control:</strong> Use xlit tokens to attack or defend countries, altering their value.
+            </li>
+            <li>
+              <strong>Collect & Mint:</strong> Earn collectible items and mint the ultimate <strong>Grand Champion NFT</strong>.
+            </li>
+            <li>
+              <strong>Leaderboard & Warmonger:</strong> View top players or bribe the Warmonger to help complete your collection.
+            </li>
+          </ul>
+          <p>The world awaits—claim, conquer, and command your destiny in Let’s Conquer Earth!</p>
+        </div>
+        <div id="TriviaPage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Sweet Trivia</h1>
+          <p class="lead">The Ultimate Trivia Challenge Awaits!</p>
+          <hr />
+          <p>Dive into the delightful world of <strong>Sweet Trivia</strong>, featuring over 200,000 questions and multiple game modes for endless enjoyment. </p>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Game Modes</h3>
+              <ul>
+                <li>
+                  <strong>Practice Mode:</strong> Learn at your own pace.
+                </li>
+                <li>
+                  <strong>Solo Mode:</strong> Chase the high score as questions get harder.
+                </li>
+                <li>
+                  <strong>Multiplayer Mode:</strong> Challenge friends or match with others.
+                </li>
+                <li>
+                  <strong>Story Mode:</strong> Move along a game board for prizes and trophies.
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Power-Ups & Features</h3>
+              <ul>
+                <li>
+                  <strong>Second Chance:</strong> Earn or purchase power-ups.
+                </li>
+                <li>
+                  <strong>Choice Bomb:</strong> Increase your chances in tough situations.
+                </li>
+                <li>
+                  <strong>Whitelabel Kit:</strong> Customize your own trivia experience with our complete kit.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p>Whether you're a casual player or a trivia mastermind, <strong>Sweet Trivia</strong> has something for everyone! </p>
+          <p>
+            <strong>Play While You Wait:</strong> Sweet Trivia is also available as a mini-game within AIlluminate Prism Desktop, so you can enjoy a quick trivia challenge while your images are generating.
+          </p>
+        </div>
+        <div id="DivineLightPage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Divine Light</h1>
+          <p class="lead">Enter the Realm of Adventure – A 2D Top-Down MMORPG Like No Other!</p>
+          <hr />
+          <p>Step into a world of endless possibilities with our immersive 2D top-down MMORPG, where the power of choice and strategy lies in your hands.</p>
+          <p>
+            <strong>Features:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Character Creation:</strong> Choose from various races and species.
+            </li>
+            <li>
+              <strong>Exploration:</strong> Traverse mountains, forests, and hidden dungeons, solo or with friends.
+            </li>
+            <li>
+              <strong>Card-Based Combat:</strong> Use skill and strategy to win epic duels.
+            </li>
+            <li>
+              <strong>Web3 Integration:</strong> Connect with blockchain assets and trade seamlessly.
+            </li>
+          </ul>
+          <p>Dive in, explore, and let the quest begin!</p>
+        </div>
+        <div id="CrestfallPage" class="container-fluid page-content" style="display: none;">
+          <h1 class="mt-4">Crestfall</h1>
+          <p class="lead">Survive the Unforgiving World of Crestfall</p>
+          <hr />
+          <p>Enter <strong>Crestfall</strong>, a survival experience crafted in the powerful Unity engine. Players are thrust into a haunting world where every decision could mean life or death. </p>
+          <p>
+            <strong>Game Highlights:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Resource Gathering:</strong> Gather essential supplies to survive.
+            </li>
+            <li>
+              <strong>Crafting & Combat:</strong> Craft items, build fortifications, and fend off threats.
+            </li>
+            <li>
+              <strong>Explore & Escape:</strong> Roam the fog-laden landscape, uncover secrets, and escape the relentless fog.
+            </li>
+          </ul>
+          <p>Be among the first to experience <strong>Crestfall</strong> in its closed alpha, exclusively for our presale and ICO participants. Will you escape, or will you fall to the fog? </p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+      function showPage(pageId) {
+        const pages = document.querySelectorAll('.page-content');
+        pages.forEach(page => {
+          page.style.display = 'none';
+        });
+        document.getElementById(pageId).style.display = 'block';
+        document.body.classList.remove('sb-sidenav-toggled');
+      }
+    </script>
+  </body>
 </html>

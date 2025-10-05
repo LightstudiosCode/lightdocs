@@ -20,6 +20,7 @@
           <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('WelcomePage')">Welcome👋</a>
           <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('tokenPage')">Token🪙</a>
           <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('aIlluminatePage')">AIlluminate💡</a>
+          <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('genNetPage')">GenNet🕸️</a>
           <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('flarePage')">Flare🔥</a>
           <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('prismPage')">Prism🌈</a>
           <a class="sidebar-item list-group-item list-group-item-action list-group-item-light p-3" href="#" onclick="showPage('opticsPage')">Optics🔭</a>
@@ -158,6 +159,283 @@
           <p> AIlluminate is your all-in-one AI toolkit, built with privacy and creativity in mind. Whether you’re an artist, writer, gamer, or innovator, AIlluminate gives you the tools to turn imagination into reality—on desktop or in the browser! </p>
           <img src="./assets/ailluminate.jpg" alt="AIlluminate" class="img-fluid">
         </div>
+        
+<div id="genNetPage" class="container-fluid page-content" style="display: none;">
+  <h1 class="mt-4">Discover Permissionless AI with GenNet</h1>
+  <hr />
+  <p>
+    <strong>GenNet</strong> is an open-access AI gateway developed by <strong>AIlluminate</strong>. 
+    It allows anyone—users or builders—to harness generative AI directly from the blockchain, 
+    <em>no accounts or credit cards required</em>. Requests are sent via smart contracts and fulfilled automatically, 
+    returning temporary results ready for retrieval.
+  </p>
+
+  <blockquote class="blockquote">
+    GenNet brings AI to Web3 — decentralized, accessible, and free from centralized accounts.
+  </blockquote>
+
+  <p><strong>How It Works:</strong></p>
+  <ul>
+    <li>Requests are sent to GenNet through on-chain smart contracts.</li>
+    <li>Each request is recorded and processed by a decentralized backend.</li>
+    <li>Results (such as generated images) are stored temporarily for retrieval.</li>
+  </ul>
+
+  <p><strong>Using GenNet:</strong></p>
+  <ul>
+    <li>
+      To use GenNet out of the box, visit the <em>image generation app</em> on your preferred supported chain. 
+      Exchange <strong>USDC</strong> for instant image creation — no login, no account setup.
+    </li>
+    <li>
+      Chains currently supported: <strong>Base</strong>, <strong>Optimism</strong>, 
+      <strong>Avalanche C-Chain</strong>, and <strong>Sonic</strong>.
+    </li>
+  </ul>
+
+  <p><strong>Supported AI Types:</strong></p>
+  <ul>
+    <li>
+      The <strong>GenNet Alpha</strong> currently supports <em>widescreen image generation</em>.
+    </li>
+    <li>
+      Upcoming versions will expand into <em>music, video, and story generation</em> as the ecosystem evolves.
+    </li>
+  </ul>
+
+  <p><strong>Developer Integration:</strong></p>
+  <ul>
+    <li>
+      Developers can easily build around GenNet by integrating its smart contract interface. 
+      Simply send a transaction with a request string to the respective chain’s oracle.
+    </li>
+    <li>
+      The oracle processes the request and stores results for retrieval via the provided API endpoint.
+    </li>
+    <li>
+      Cost-splitting is supported: multiple users can share the USDC cost required to process a transaction.
+    </li>
+  </ul>
+
+  <p><strong>Costs & Fees:</strong></p>
+  <ul>
+    <li>
+      Generative AI requires significant compute resources; 
+      therefore, usage is priced per request, paid in <strong>USDC</strong>.
+    </li>
+    <li>
+      Current price: <code>$0.10</code> per generated image.
+    </li>
+    <li>
+      We continuously optimize infrastructure to reduce fees without sacrificing quality.
+    </li>
+  </ul>
+
+  <p><strong>Integration Example:</strong></p>
+  <pre><code class="language-javascript">
+// Basic setup for GenNet integration
+const BACKEND_BASE = "https://agents-guarantees-worldcat-neither.trycloudflare.com";
+const CHAINS = {
+  base: {
+    key: "base",
+    label: "Base",
+    chainIdHex: "0x2105",
+    usdc: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    contract: "0x046e386b5f4e1b1656ae076cd6ec31c6d67c3a11"
+  }
+};
+
+// Example: Generate an image via contract
+const ERC20_ABI = ["function approve(address spender, uint256 amount) returns (bool)"];
+const APP_ABI  = ["function payAndRecord(string prompt) public"];
+const PRICE_PER_IMAGE_USDC6 = 100_000n; // $0.10
+
+async function generateImage(prompt) {
+  const provider = new ethers.BrowserProvider(window.ethereum);
+  const signer = await provider.getSigner();
+  const cfg = CHAINS.base;
+
+  // Approve USDC
+  const usdc = new ethers.Contract(cfg.usdc, ERC20_ABI, signer);
+  await usdc.approve(cfg.contract, PRICE_PER_IMAGE_USDC6);
+
+  // Send request to oracle
+  const app = new ethers.Contract(cfg.contract, APP_ABI, signer);
+  const tx = await app.payAndRecord(prompt);
+  console.log("Transaction sent:", tx.hash);
+}
+  </code></pre>
+
+  <p>
+    Once your transaction is confirmed, results can be fetched using the same transaction hash:
+  </p>
+  <pre><code class="language-javascript">
+// Retrieve the generated result
+async function fetchResult(chain = "base", txHash) {
+  const res = await fetch(`${BACKEND_BASE}/${chain}/${txHash}`);
+  const json = await res.json();
+  console.log("Result:", json);
+}
+  </code></pre>
+
+  <p>
+    With these minimal steps, any developer can bring decentralized AI generation to their dApps using GenNet.
+  </p>
+
+  <!-- ===== Expanded: Import, Poll, Events, Fee Split Patterns ===== -->
+
+  <h3 class="mt-5">Import & Call <code>payAndRecord</code> Directly</h3>
+  <p>
+    If you’re using a richer interface, add read helpers and the event signature from the contract to restore prompts and tail activity.
+  </p>
+  <pre><code class="language-javascript">
+// Enriched ABI to mirror contract apiPos
+const APP_ABI_ENRICHED = [
+  "function payAndRecord(string prompt) external",
+  "function counter() external view returns (uint256)",
+  "function promptFor(uint256 number) external view returns (string)",
+  "event SubmissionRecorded(uint256 indexed number,address indexed from,uint256 amount,string prompt)"
+];
+
+async function payAndRecordOn(chainKey, prompt) {
+  const cfg = CHAINS[chainKey] || CHAINS.base;
+  const provider = new ethers.BrowserProvider(window.ethereum, "any");
+  const signer   = await provider.getSigner();
+
+  // Approve for one image (or batch N × price to reduce prompts)
+  const usdc = new ethers.Contract(cfg.usdc, ERC20_ABI, signer);
+  await (await usdc.approve(cfg.contract, PRICE_PER_IMAGE_USDC6)).wait();
+
+  // Call oracle
+  const app = new ethers.Contract(cfg.contract, APP_ABI_ENRICHED, signer);
+  const tx  = await app.payAndRecord(prompt);
+  return tx.hash;
+}
+  </code></pre>
+
+  <h3 class="mt-4">Poll the Endpoint by Transaction Hash</h3>
+  <p>
+    Use the same hash you got from <code>payAndRecord</code>. When status is <code>completed</code>, you’ll receive a temporary asset URL.
+  </p>
+  <pre><code class="language-javascript">
+async function pollGenNet(chainKey, txHash, { intervalMs = 8000, maxTries = 90 } = {}) {
+  const primary  = `${BACKEND_BASE}/${chainKey}/${txHash}`;
+  const fallback = `${BACKEND_BASE}/results/${chainKey}/${txHash}`;
+
+  for (let i = 0; i < maxTries; i++) {
+    try {
+      let res = await fetch(primary, { cache: "no-store" });
+      if (!res.ok) res = await fetch(fallback, { cache: "no-store" });
+
+      if (res.ok) {
+        const json = await res.json();
+        const s = String(json.status || "").toLowerCase();
+        if (s === "completed" || s === "complete") return json;   // { status, url, prompt, ... }
+        if (s === "failed") throw new Error(json.error || "backend failed");
+      }
+    } catch (e) {
+      console.warn("poll error:", e);
+    }
+    await new Promise(r => setTimeout(r, intervalMs));
+  }
+  throw new Error("Timeout waiting for GenNet");
+}
+
+// Example glue:
+(async () => {
+  const txHash = await payAndRecordOn("base", "a neon skyline, cinematic, widescreen");
+  const result = await pollGenNet("base", txHash);
+  console.log("GenNet URL:", result.url);
+})();
+  </code></pre>
+
+  <h3 class="mt-4">Read On-Chain State & Stream Events</h3>
+  <p>
+    Build activity feeds and “recent prompts” panels using the counter, prompt map, and the <code>SubmissionRecorded</code> event.
+  </p>
+  <pre><code class="language-javascript">
+async function readLatestPrompt(chainKey = "base") {
+  const cfg  = CHAINS[chainKey];
+  const prov = new ethers.BrowserProvider(window.ethereum, "any");
+  const app  = new ethers.Contract(cfg.contract, APP_ABI_ENRICHED, await prov.getSigner());
+  const n    = await app.counter();
+  return { n: Number(n), prompt: await app.promptFor(n) };
+}
+
+async function subscribeSubmissions(chainKey, onEvent) {
+  const cfg  = CHAINS[chainKey];
+  const prov = new ethers.BrowserProvider(window.ethereum, "any");
+  const app  = new ethers.Contract(cfg.contract, APP_ABI_ENRICHED, await prov.getSigner());
+  app.on("SubmissionRecorded", (number, from, amount, prompt, evt) => {
+    onEvent({
+      number: Number(number),
+      from,
+      amount: amount.toString(),
+      prompt,
+      txHash: evt?.log?.transactionHash
+    });
+  });
+}
+  </code></pre>
+
+  <h3 class="mt-4">Split Fees for Team Apps</h3>
+  <p>
+    Two simple models to let multiple users share the USDC cost and build collaborative apps:
+  </p>
+  <ul>
+    <li><strong>Off-chain split (fastest):</strong> One wallet pays on-chain; others reimburse via USDC transfers. No extra contracts.</li>
+    <li><strong>On-chain pool (trust-minimized):</strong> Users deposit USDC into a small pool; when deposits ≥ price, the pool calls <code>payAndRecord</code> once.</li>
+  </ul>
+
+  <details>
+    <summary><strong>Minimal Fee Pool (Solidity)</strong></summary>
+    <pre><code class="language-solidity">
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+interface IERC20 { function transferFrom(address,address,uint256) external returns (bool); function approve(address,uint256) external returns (bool); }
+interface IGenNet { function payAndRecord(string calldata prompt) external; }
+
+contract FeePool {
+  IERC20  public immutable usdc;
+  IGenNet public immutable gennet;
+  address public immutable payer;   // the account that oracle expects funds from (admin sink)
+  uint256 public immutable price;   // PRICE_PER_IMAGE_USDC6
+
+  mapping(address => uint256) public shares;
+  uint256 public total;
+
+  constructor(IERC20 _usdc, IGenNet _gennet, address _payer, uint256 _price) {
+    usdc=_usdc; gennet=_gennet; payer=_payer; price=_price;
+  }
+
+  function contribute(uint256 amt) external {
+    require(usdc.transferFrom(msg.sender, address(this), amt), "pull fail");
+    shares[msg.sender] += amt;
+    total += amt;
+  }
+
+  function trigger(string calldata prompt) external {
+    require(total >= price, "insufficient pool");
+    // If the oracle pulls via transferFrom(msg.sender, admin, amount),
+    // have THIS CONTRACT be the caller/payer by first moving price to `payer` or
+    // adapt oracle to pull from this contract. Choose the variant that matches your deployed oracle.
+    require(usdc.approve(address(gennet), 0), "reset");
+    require(usdc.approve(address(gennet), price), "approve");
+    gennet.payAndRecord(prompt);
+    total -= price;
+  }
+}
+    </code></pre>
+  </details>
+
+  <p class="text-muted mt-2">
+    <em>Note:</em> Your provided oracle pattern uses <code>transferFrom(msg.sender, admin, amount)</code>. 
+    For a pool, either have the pool be the <strong>caller</strong> (contributors fund the pool first), 
+    or keep it simple with the off-chain reimbursement model.
+  </p>
+</div>
+
         <div id="flarePage" class="container-fluid page-content" style="display: none;">
           <h1 class="mt-4">Meet AIlluminate Flare: Your Secure Desktop AI Assistant!</h1>
           <hr />
